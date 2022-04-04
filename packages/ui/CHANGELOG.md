@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/dennishn/hest/compare/ui@v2.0.0...ui@v2.0.1) (2022-04-04)
+
+
+### Bug Fixes
+
+* **UI:theme:** more brown, fixes #1 ([8710896](https://github.com/dennishn/hest/commit/87108964546ddd6d2cd84b4659fbf0f3df4e2db8))
+
 ## [2.0.0](https://github.com/dennishn/hest/compare/ui@v1.0.0...ui@v2.0.0) (2022-04-04)
 
 
