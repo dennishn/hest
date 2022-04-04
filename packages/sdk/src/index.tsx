@@ -1,7 +1,7 @@
 export * from "./hooks/commercetools/useCommercetoolsTokenProvider";
 export * from "./generated/components";
 
-const MAP = "b";
+const MAP = "c";
 
 const SDK = {};
 
