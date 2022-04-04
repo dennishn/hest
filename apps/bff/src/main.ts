@@ -10,7 +10,7 @@ globalThis.fetch = fetch;
 
 const appSettings = configuration()["APP_SETTINGS"];
 
-export const a = "b";
+export const a = "a";
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule, new ExpressAdapter(), {
