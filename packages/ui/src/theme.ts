@@ -33,7 +33,7 @@ interface ExtendedChakraTheme extends ChakraTheme {
 
 export const PX_BASE = "16px";
 
-export const HEST = "C";
+export const HEST = "D";
 
 const direction: ThemeDirection = "ltr";
 
