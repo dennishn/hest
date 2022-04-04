@@ -1,0 +1,11 @@
+{
+  "name": "cf-example",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "devDependencies": {
+    "ecco-tsconfigs": "*",
+    "ecco-configs": "*",
+    "typescript": "^4.5.3"
+  }
+}

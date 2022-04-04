@@ -1,0 +1,13 @@
+{
+	"extends": "ecco-tsconfigs/ui-library.json",
+	"include": ["."],
+	"exclude": ["dist", "build", "node_modules"],
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@design-tokens/*": ["design-tokens/*"],
+			"@utils/*": ["utils/*"]
+		}
+	}
+}

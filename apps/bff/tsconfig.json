@@ -1,0 +1,18 @@
+{
+	"extends": "ecco-tsconfigs/node.json",
+	"include": ["**/*.ts", "**/*.js"],
+	"exclude": ["node_modules"],
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"baseUrl": ".",
+		"incremental": true,
+		"lib": ["ES2019"],
+		"module": "commonjs",
+		"target": "ES2019",
+		"moduleResolution": "node"
+	}
+}

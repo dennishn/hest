@@ -1,0 +1,13 @@
+{
+  "name": "ecco-tsconfigs",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "contentful-app.json",
+    "node.json",
+    "ui-library.json",
+    "js-library.json"
+  ]
+}

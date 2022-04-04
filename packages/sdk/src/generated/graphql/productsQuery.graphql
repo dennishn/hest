@@ -1,0 +1,21 @@
+query exampleQuery(
+	$id: String!
+	$sku: String
+	$variantKey: String
+	$key: String
+	$where: String
+	$sort: [String!]
+	$limit: Int
+	$offset: Int
+	$skus: [String!]
+) {
+	CF_product(id: $id) {
+		hest
+		test
+	}
+	products {
+		results {
+			id
+		}
+	}
+}

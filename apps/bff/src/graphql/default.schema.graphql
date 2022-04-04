@@ -1,0 +1,11 @@
+"""
+Default graphql schema  - do not delete - needed for stitching.
+"""
+type Query
+
+type Mutation
+
+schema {
+  query: Query
+  mutation: Mutation
+}

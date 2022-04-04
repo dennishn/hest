@@ -1,0 +1,6 @@
+{
+  "path": ".",
+	"tagPrefix": "ui@v",
+	"issueUrlFormat": "https://jira.krm.ag/browse/GLOBALCOM-{{id}}",
+	"issuePrefixes": ["GLOBALCOM-"]
+}

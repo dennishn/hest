@@ -1,0 +1,18 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { FontSizes } from "../../../../../.storybook/dock-blocks/FontSizes";
+
+import fontFamilies from "@styles/design-tokens/02.typography/01.font-families/font-families";
+import fontSizes from "@styles/design-tokens/02.typography/02.font-sizes/font-sizes";
+
+export const grumpyText =
+	"Grumpy wizards make a toxic brew for the jovial queen.";
+
+<Meta title="Design Tokens/Typography/Font Sizes" />
+
+# Font Sizes
+
+<FontSizes
+	fontSizes={fontSizes}
+	fontFamily={fontFamilies["content"]}
+	text={grumpyText}
+/>

@@ -1,0 +1,34 @@
+{
+	"name": "sdk",
+	"version": "0.0.0",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"sideEffects": false,
+	"files": [
+		"dist/**"
+	],
+	"scripts": {
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+		"lint": "tsc --pretty --noEmit && eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
+		"build": "tsup src/index.tsx --format cjs --dts-resolve --external react",
+		"start": "tsup src/index.tsx --format cjs --watch --dts-resolve --external react",
+		"release": "HUSKY=0 standard-version"
+	},
+	"devDependencies": {
+		"@graphql-codegen/cli": "2.6.2",
+		"@graphql-codegen/typescript-urql": "3.5.4",
+		"ecco-configs": "*",
+		"ecco-tsconfigs": "*",
+		"graphql": "16.3.0",
+		"prettier": "^2.5.1",
+		"tsup": "5.11.13",
+		"typescript": "^4.5.3",
+		"urql": "2.2.0"
+	},
+	"dependencies": {
+		"@commercetools/sdk-auth": "3.0.13",
+		"immer": "9.0.12",
+		"jotai": "1.6.0"
+	}
+}

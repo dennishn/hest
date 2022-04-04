@@ -1,0 +1,43 @@
+{
+	"name": "ecco-fe",
+	"version": "0.0.0",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev --parallel --continue",
+		"lint": "turbo run lint",
+		"format": "turbo run format",
+		"clean:node_modules": "rimraf {apps/**/node_modules,packages/**/node_modules}",
+		"prepare": "husky install && npm run prepare -w ui"
+	},
+	"devDependencies": {
+		"commitizen": "^4.2.4",
+		"cz-customizable": "^6.3.0",
+		"eslint": "^8.9.0",
+		"husky": "^7.0.0",
+		"lint-staged": "^12.3.4",
+		"prettier": "^2.5.1",
+		"replace": "^1.2.1",
+		"rimraf": "^3.0.2",
+		"standard-version": "^9.3.2",
+		"turbo": "^1.1.2"
+	},
+	"engines": {
+		"npm": ">=8.0.0",
+		"node": ">=16.0.0"
+	},
+	"packageManager": "npm@8.1.2",
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"eslint",
+			"prettier --write"
+		],
+		"*.{md,html,css}": [
+			"prettier --write"
+		]
+	}
+}

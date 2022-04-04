@@ -1,0 +1,80 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+
+import { theme } from "@styles/theme";
+
+<Meta title="Design Tokens/Colors" />
+
+# Primary Colors
+
+Primary colors are used for content and UI text, and for main UI controls (buttons, checkboxes etc.)
+
+<ColorPalette>
+	<ColorItem title="black" subtitle="" colors={[theme.colors.black]} />
+	<ColorItem title="white" subtitle="" colors={[theme.colors.white]} />
+</ColorPalette>
+
+# Secondary Colors
+
+Secondary colors are used for backgrounds
+
+<ColorPalette>
+	<ColorItem
+		title="clubChange"
+		subtitle=""
+		colors={[theme.colors.clubChange]}
+	/>
+	<ColorItem title="pink" subtitle="" colors={[theme.colors.pink]} />
+	<ColorItem title="lightGrey" subtitle="" colors={[theme.colors.lightGrey]} />
+	<ColorItem title="armyGreen" subtitle="" colors={[theme.colors.armyGreen]} />
+	<ColorItem title="purple" subtitle="" colors={[theme.colors.purple]} />
+</ColorPalette>
+
+# Function Colors
+
+Function colors are used for CTAs, UI and feedback (form validation)
+
+<ColorPalette>
+	<ColorItem title="linkRed" subtitle="" colors={[theme.colors.linkRed]} />
+	<ColorItem title="redTint20" subtitle="" colors={[theme.colors.redTint20]} />
+	<ColorItem
+		title="confirmationGreen"
+		subtitle=""
+		colors={[theme.colors.confirmationGreen]}
+	/>
+	<ColorItem
+		title="greenTint10"
+		subtitle=""
+		colors={[theme.colors.greenTint10]}
+	/>
+	<ColorItem title="hoverGrey" subtitle="" colors={[theme.colors.hoverGrey]} />
+	<ColorItem
+		title="blackTint50"
+		subtitle=""
+		colors={[theme.colors.blackTint50]}
+	/>
+	<ColorItem
+		title="blackTint30"
+		subtitle=""
+		colors={[theme.colors.blackTint30]}
+	/>
+	<ColorItem
+		title="blackTint20"
+		subtitle=""
+		colors={[theme.colors.blackTint20]}
+	/>
+</ColorPalette>
+
+# Product Colors
+
+Product colors are used for color pickers only
+
+<ColorPalette>
+	{Object.keys(theme.colors.products).map((key) => (
+		<ColorItem
+			key={key}
+			title={key}
+			subtitle=""
+			colors={[theme.colors.products[key]]}
+		/>
+	))}
+</ColorPalette>

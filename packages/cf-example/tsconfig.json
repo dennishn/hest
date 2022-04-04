@@ -1,0 +1,5 @@
+{
+  "extends": "ecco-tsconfigs/contentful-app",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

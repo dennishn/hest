@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  bff:
+    container_name: bff
+    build:
+      dockerfile: ./docker/bff/Dockerfile
+      context: .
+    environment:
+      - NODE_ENV=production
